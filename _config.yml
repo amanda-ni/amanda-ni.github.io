@@ -1,86 +1,99 @@
-#
-# This file contains configuration flags to customize your site
-#
-
-# Name of your site (displayed in the header)
-name: Amanda's Adventures in AI
-
-# Short bio or description (displayed in the header)
-description: I'm taking the Car Nano Degree, and am excited about machine learning!
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://github.com/amanda-ni/amanda-ni.github.io/blob/master/images/amanda-ni.jpg?raw=true
-
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email:
-  facebook:
-  flickr:
-  github: amanda-ni
-  instagram:
-  linkedin: 
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter:
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url:
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
+# --- Serving options --- #
+# If you are building a simple GitHub user page (username.github.io) then use these settings:
+# url is the full website URL
+url: "http://droglenc.github.io"
+# baseurl is the website's URL without the hostname
 baseurl: ""
 
-#
-# !! You don't need to change any of the configuration flags below !!
-#
+# Name of website
+title: Derek Ogle
+# Short description of your site
+description: Professor of Mathemetical Sciences and Natural Resources at Northland College.
 
-permalink: /:title/
+# --- Navigation bar options --- #
+# Image to show in the navigation bar - image must be a square (width = height)
+# Remove this parameter if you don't want an image in the navbar
+avatar: "/img/DerekOgle.jpg"
 
-# The release of Jekyll Now that you're using
-version: v1.2.0
+# List of links in the navigation bar
+navbar-links:
+  Teaching: "teaching"
+  Research: "research"
+  Personal: "personal"
+  About/Contact: "aboutme"
+  Home: ""
 
-# Jekyll 3 now only supports Kramdown for Markdown
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
+# --- Footer options --- #
 
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :expanded # You might prefer to minify using :compressed
+# Change all these values or delete the ones you don't want.
+# Important: you must keep the "name" parameter, everything else you can remove
+author:
+  name: Derek H. Ogle
+  email: "dogle@northland.edu"
+  github: droglenc
+  twitter: droglenc
 
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+# Select which links to show in the footer
+footer-links-active:
+  rss: false
+  facebook: false
+  email: true
+  twitter: true
+  github: true
+  linkedin: false
+  stackoverflow: false
 
-# Exclude these files from your production _site
+# How to display the link to the website in the footer
+# Remove this if you don't want a link in the footer
+url-pretty: "derekogle.com"
+
+# --- Misc --- #
+
+# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
+#disqus: ""
+
+# Fill in your Google Analytics ID to track your website using GA
+google_analytics: "UA-67615311-1"
+
+# --- Don't need to touch anything below here (but you can if you want) --- #
+
+# Output options (more information on Jekyll's site)
+timezone: "America/Chicago"
+markdown: kramdown
+highlighter: rouge
+permalink: /:year-:month-:day-:title
+paginate: 5
+
+# Default YAML values (more information on Jekyll's site)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+  -
+    scope:
+      path: "" # all files
+    values:
+      layout: "page"
+      show-avatar: true
+
+# Exclude these files from production site
 exclude:
-  - Gemfile
-  - Gemfile.lock
+  - CNAME
   - LICENSE
   - README.md
-  - CNAME
+
+# prose.io options
+prose:
+  ignore:
+    - 404.html
+    - LICENSE
+    - feed.xml
+    - /_includes
+    - /_layouts
+    - /css
+    - /img
+    - /js
