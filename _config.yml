@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Jessica's Programming Journal
+name: Amanda's Adventures in AI
 
 # Short bio or description (displayed in the header)
-description: Things I've learned, e.g. better ways to code and mistakes to avoid.
+description: After taking the Car Nano Degree with my husband Karl, I'm really into machine learning!
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars1.githubusercontent.com/u/11069586?v=3&s=466
@@ -21,9 +21,9 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: jessicayung
+  github: amanda-ni
   instagram:
-  linkedin: uk.linkedin.com/in/jessicayungyc
+  linkedin: 
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter:
