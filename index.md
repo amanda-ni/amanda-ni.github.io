@@ -4,7 +4,7 @@ title: Amanda
 subtitle: Adventures in AI
 css: "/css/index.css"
 meta-title: "Amanda's adventures in AI, a self-driving car enthusiast"
-meta-description: "Professor of Mathemetical Sciences and Natural Resources at Northland College."
+meta-description: "I'm taking the Car Nano Degree, and am excited about machine learning!"
 bigimg:
   - "/images/poster/puppachino.jpg" : "Rosie after licking a Puppacino from Starbucks"
   - "/images/poster/49ers.jpg" : "At a 49ers game, courtesy Wade"
