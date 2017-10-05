@@ -1,12 +1,9 @@
 ---
 layout: post
-title: About this programming journal
+title: Finding Lane Lines on the Road
 ---
 
-
-# **Finding Lane Lines on the Road** 
-
-## Homework 1 Writeup
+## CarND NanoDegree Project 1
 
 ---
 
