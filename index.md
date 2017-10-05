@@ -1,9 +1,9 @@
 ---
-layout: page
-title: Derek Ogle
-subtitle: Fisheries & Stats Professor / R Enthusiast
+layout: page-header
+title: Amanda
+subtitle: Adventures in AI
 css: "/css/index.css"
-meta-title: "Derek Ogle"
+meta-title: "Amanda's adventures in AI, a self-driving car enthusiast"
 meta-description: "Professor of Mathemetical Sciences and Natural Resources at Northland College."
 bigimg:
   - "/img/big-imgs/Arizona_2017a.jpg" : "Arizona, 2017"
@@ -56,11 +56,18 @@ bigimg:
   - "/img/big-imgs/SuperiorShip15.jpg" : "Ship on Lake Superior"
 ---
 
-<div style="text-align:center">
-<strong>Quick Links:</strong> &nbsp;&nbsp; 
-<a href="http://derekogle.com/fishR/" role="button" class="btn btn-primary">fishR</a> 
-<a href="http://derekogle.com/IFAR/" role="button" class="btn btn-primary">IFAR Book</a> 
-<a href="http://derekogle.com/NCMTH107/" role="button" class="btn btn-primary">MTH107</a> 
-<a href="http://derekogle.com/NCMTH207/" role="button" class="btn btn-primary">MTH207</a> 
-<a href="http://derekogle.com/NCNRS349/" role="button" class="btn btn-primary">NRS349</a>
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
 </div>
+
