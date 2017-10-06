@@ -2,7 +2,7 @@
 layout: post
 title: Finding Lane Lines on the Road
 ---
-## CarND NanoDegree Project 1
+## Self-Driving Car NanoDegree Project 1
 
 This project was about finding lane lines on the road. It was implemented in Python 2.7, and it used basic computer vision techniques (e.g., line detectors) to determine the position of the vehicle.
 
