@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Finding Lane Lines on the Road
+title: Classifying Traffic Signs
 ---
 ## Self Driving Car Nanodegree Project 2
 
