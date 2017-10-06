@@ -18,7 +18,7 @@ My pipeline consisted of 5 steps:
 
 2. __Apply a Mask__ - This function will extract out the edges of the mask that we want to apply for our processing. There are optional arguments specifying where in the image you want to focus, but these are based on a horizontal and vertical offset from the center. Since we're using a trapezoid, the variable `Hoffset` is the offset of the two vertices from the middle of the picture. Likewise, the variable `Voffset` is how far lower the top of the trapezoid will be. 
 
-  <img style="text-align:center"> src="https://github.com/amanda-ni/CarND-LaneLines-P1/blob/master/writeup_images/mask-info.png" width="480" alt="Edge Detection" />
+  <img style="text-align:center" src="https://github.com/amanda-ni/CarND-LaneLines-P1/blob/master/writeup_images/mask-info.png" width="480" alt="Mask Information" />
 
 3. __Detect the Lanes__ - This function just runs the Hough transform on the lanes. All the arguments are passed in as optional, but the masked image is a positional argument.
 
@@ -26,8 +26,8 @@ My pipeline consisted of 5 steps:
 
   * __Derive the Line__ - To figure out whether or not this is a valid line, we have to determine what the line is, itself. This is determined by understanding the slope and the intercept. We find what m and b are by definition.
 
-  `m = (y2 - y1)/(x2 - x1)` 
-  and `b = y2 - m * x2`
+    `m = (y2 - y1)/(x2 - x1)` 
+     and `b = y2 - m * x2`
 
   * __Filter out bad intercepts__ - I initially, only did this. Then when the "challenging problem" came along, I realized I needed to do more (which will be described in the next step). The bad lines are the ones that don't really intercept the X axis at a reasonable point, the bottom of the image. Therefore, I have the arguments `LL`, `LR`, `RR`, `RL`, which are the left lane's limits and the right lane's limits, respectively. So, the x-intercept must fall in those boundaries. (BTW, I realized that the challenge video had different dimensions, so that's why I had to make these arguments.)
 
