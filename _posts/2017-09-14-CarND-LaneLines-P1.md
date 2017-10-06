@@ -18,7 +18,7 @@ My pipeline consisted of 5 steps:
 
 2. __Apply a Mask__ - This function will extract out the edges of the mask that we want to apply for our processing. There are optional arguments specifying where in the image you want to focus, but these are based on a horizontal and vertical offset from the center. Since we're using a trapezoid, the variable `Hoffset` is the offset of the two vertices from the middle of the picture. Likewise, the variable `Voffset` is how far lower the top of the trapezoid will be. 
 
-  <img style="text-align:center" src="https://github.com/amanda-ni/CarND-LaneLines-P1/blob/master/writeup_images/mask-info.png" width="480" alt="Mask Information">
+  <img style="text-align:center" src="https://raw.githubusercontent.com/amanda-ni/CarND-LaneLines-P1/master/writeup_images/mask-info.png" width="480" alt="Mask Information">
 
 3. __Detect the Lanes__ - This function just runs the Hough transform on the lanes. All the arguments are passed in as optional, but the masked image is a positional argument.
 
