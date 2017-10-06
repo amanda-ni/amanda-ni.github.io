@@ -14,7 +14,7 @@ My pipeline consisted of 5 steps:
 
 1. __Detect the Edges__ - This will convert the image to grayscale and then blur it so that only _true_ lines will be detected. I had to play with the `low_threshold` and `high_threshold`, so I added that as a function. For example, during the "challenging" problem, I noticed that white pavement was especially difficult to detect.
 
-  <img src="https://github.com/amanda-ni/CarND-LaneLines-P1/raw/master/writeup_images/edges.jpg" width="480" alt="Edge Detection" />
+  <img style="float: center;" src="https://github.com/amanda-ni/CarND-LaneLines-P1/raw/master/writeup_images/edges.jpg" width="480" alt="Edge Detection" />
 
 2. __Apply a Mask__ - This function will extract out the edges of the mask that we want to apply for our processing. There are optional arguments specifying where in the image you want to focus, but these are based on a horizontal and vertical offset from the center. Since we're using a trapezoid, the variable `Hoffset` is the offset of the two vertices from the middle of the picture. Likewise, the variable `Voffset` is how far lower the top of the trapezoid will be. 
 
@@ -37,10 +37,7 @@ My pipeline consisted of 5 steps:
  
 5. Draw the lines - This UI is just to finish it off and then write to video.
 
-![solidWhiteCurve.jpg][https://github.com/amanda-ni/CarND-LaneLines-P1/raw/master/test_images_output/solidWhiteCurve.jpg]
-
-<img src="test_images_output/solidWhiteCurve.jpg" width="480" alt="Combined Image" />
-
+<img style="float: center;" src="https://github.com/amanda-ni/CarND-LaneLines-P1/raw/master/test_images_output/solidWhiteCurve.jpg" width="480" alt="Combined Image, Solid White Curve" />
 
 ### 2. Potential Shortcomings
 
