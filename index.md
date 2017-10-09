@@ -9,6 +9,7 @@ bigimg:
   - "/images/poster/puppachino.jpg" : "Rosie after licking a Puppacino from Starbucks"
   - "/images/poster/49ers.jpg" : "At a 49ers game, courtesy Wade"
   - "images/poster/south-france.jpg" : "In the South of France for vacation, 2016"
+  - "images/poster/wisperia-trees.jpg" : "Wisperia Trees in Japan"
 ---
 
 <div class="posts">
