@@ -1,7 +1,7 @@
 ---
 layout: page-header
-title: Self-Driving Car NanoDegree Page
-subtitle: A Journey through Udacity
+title: Amanda's Coding Page
+subtitle: Musings and Otherwise
 css: "/css/index.css"
 meta-title: "Amanda's adventures in AI, a self-driving car enthusiast"
 meta-description: "I'm taking the Car Nano Degree, and am excited about machine learning!"
