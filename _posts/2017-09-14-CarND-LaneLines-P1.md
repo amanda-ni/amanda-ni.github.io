@@ -51,3 +51,5 @@ One potential shortcoming would be what would happen when I ran the challenge pr
 One improvement would be to take into consideration the fact that each of the frames are related to the frames that surround it. To take advantage of that, if the lines predicted by the algorithm differ significantly from frame to frame, there's a pretty good chance that one of the lines isn't really a line.
 
 Another improvement would be to merge close lines together. If there are multiple predicted lines for a single lane line, then we can take the average or use a single line to represent it.
+
+
